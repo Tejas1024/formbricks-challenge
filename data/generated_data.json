@@ -1,0 +1,66 @@
+{
+  "surveys": [
+    {
+      "title": "Product Feedback",
+      "description": "Help us improve",
+      "questions": [
+        {
+          "text": "How satisfied?",
+          "type": "rating"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "user0@example.com",
+      "name": "User 0",
+      "role": "Manager"
+    },
+    {
+      "email": "user1@example.com",
+      "name": "User 1",
+      "role": "Manager"
+    },
+    {
+      "email": "user2@example.com",
+      "name": "User 2",
+      "role": "Manager"
+    },
+    {
+      "email": "user3@example.com",
+      "name": "User 3",
+      "role": "Manager"
+    },
+    {
+      "email": "user4@example.com",
+      "name": "User 4",
+      "role": "Manager"
+    },
+    {
+      "email": "user5@example.com",
+      "name": "User 5",
+      "role": "Manager"
+    },
+    {
+      "email": "user6@example.com",
+      "name": "User 6",
+      "role": "Manager"
+    },
+    {
+      "email": "user7@example.com",
+      "name": "User 7",
+      "role": "Manager"
+    },
+    {
+      "email": "user8@example.com",
+      "name": "User 8",
+      "role": "Manager"
+    },
+    {
+      "email": "user9@example.com",
+      "name": "User 9",
+      "role": "Manager"
+    }
+  ]
+}

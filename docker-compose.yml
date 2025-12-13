@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: formbricks
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  formbricks:
+    image: formbricks/formbricks:latest
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/formbricks
+      NEXTAUTH_SECRET: changeme123456789
+      NEXTAUTH_URL: http://localhost:3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - uploads:/home/nextjs/apps/web/uploads
+
+volumes:
+  postgres_data:
+  uploads:

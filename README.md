@@ -1,4 +1,4 @@
-# Formbricks Hiring Challenge
+# Formbricks   Challenge
 
 A complete, working implementation of the Formbricks hiring challenge with CLI-driven local deployment, data generation, and seeding capabilities.
 
